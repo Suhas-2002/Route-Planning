@@ -36,7 +36,7 @@ def prims(v,g):
 
 #Kruskal Algorithm
 #Minimum cost using Kruskal's Algorithm
-def krushal(v,g):
+def kruskal(v,g):
     parent = [i for i in range(v)]
     V = v
     def find(i):
@@ -107,7 +107,7 @@ cost /= 2
 print("Actual Cost : ", cost)
 inputgraph(arr)
 prims(n,arr) #Prims Algorithm
-minicost = krushal(n,arr) #Minimum cost obtained from Kruskal's Algorithm
+minicost = kruskal(n,arr) #Minimum cost obtained from Kruskal's Algorithm
 print("Minimum cost obtained from Kruskal/Prim Algorithm : ", minicost)
 print("Total distance saved using the above approach : ", cost-minicost)   
 
